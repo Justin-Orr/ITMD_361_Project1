@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-@import url('https://basehold.it/25'); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -23,7 +23,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 html {
   /* If the font on the left is not present for the browser then try the next one*/
-  font-family: 'Montserrat', Arial, Courier, 'Times New Roman', Times, sans-serif;
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
   line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
   padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
@@ -42,12 +42,12 @@ h1 {
   - Initially mobile-first styles
 */
 
-/* Modular Styles 
+/* Modular Styles
   - Almost always either class selectors or relationship selectors (.information, #header ul, etc.)
   - Almost always aimed at decorative flourishes (borders, backgrounds, special presentation of groups of elements)
 */
 
-/* State Styles 
+/* State Styles
   - Two basic states: media queries, or JavaScript-based styles
   - The states, particularly media queries, often take the order of Base, Layout, and Modular styles within them.
   - For JavaScript, the selectors will primarily if not exclusively consist of class selectors (.active, .hidden, .featured)
