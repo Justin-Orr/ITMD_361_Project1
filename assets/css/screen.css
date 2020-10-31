@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://basehold.it/25'); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -10,7 +11,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/*
+  Setting type according to a 3:4 (Major Third) Modular Scale:
+  https://www.modularscale.com/?18&px&1.25
+*/
 html {
   /* If the font on the left is not present for the browser then try the next one*/
-  font-family: 'Montserrat', Arial, Courier, 'Times New Roman', Times, sans-serif; 
+  font-family: 'Montserrat', Arial, Courier, 'Times New Roman', Times, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 25px 12.5px 25px 12.5px; /* TRBL */
 }
