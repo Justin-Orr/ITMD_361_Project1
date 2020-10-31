@@ -73,6 +73,10 @@ h1 {
   background-color: #909090;
 }
 
+#footer {
+  font-size: 14px;
+}
+
 /* State Styles
   - Two basic states: media queries, or JavaScript-based styles
   - The states, particularly media queries, often take the order of Base, Layout, and Modular styles within them.
