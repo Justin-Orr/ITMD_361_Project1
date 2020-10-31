@@ -26,8 +26,8 @@ html {
   font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
   line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
-  padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
-  color: #333;
+  /*padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
+  color: #fff;
 }
 
 h1 {
@@ -42,6 +42,13 @@ h1 {
   - Initially mobile-first styles
 */
 
+#home {
+  background-image: url(../img/coffee_on_table_edit.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 #header {
   padding-bottom: 25px;
 }
@@ -49,6 +56,10 @@ h1 {
 #home-nav {
   padding-bottom: 25px;
   text-align: center;
+}
+
+#footer {
+  font-size: 14px;
 }
 
 /* Modular Styles
@@ -67,14 +78,11 @@ h1 {
   color: #fff;
   padding-left: 5px;
   padding-right: 5px;
+  border: 1px solid #fff;
 }
 
 #home-nav a:hover {
   background-color: #909090;
-}
-
-#footer {
-  font-size: 14px;
 }
 
 /* State Styles
