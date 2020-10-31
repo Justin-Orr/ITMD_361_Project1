@@ -24,16 +24,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   /* If the font on the left is not present for the browser then try the next one*/
   font-family: 'Montserrat', Arial, Courier, 'Times New Roman', Times, sans-serif;
-  font-size: 18px;/*1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
-  line-height: 25px;/*1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
-  padding: 25px 12.5px 25px 12.5px;/*1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
+  font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
+  line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
+  padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
   color: #333;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 43.945px /*2.441em; /* 43.945px/18px = 2.441em */
-  /*line-height: 0.711em; /* 31.25px/43.945px = 0.711em*/
+  font-size: 43.945px; /* 2.441em; /* 43.945px/18px = 2.441em */
+  line-height: 50px; /* 31.25px/43.945px = 0.711em*/
 }
 
 /* Layout Styles
@@ -41,14 +41,6 @@ h1 {
   - Almost exclusively aimed at layout (padding/margin, grid, flexbox, etc.)
   - Initially mobile-first styles
 */
-
-#home {
-  text-align: center;
-}
-
-#footer {
-  text-align: initial;
-}
 
 /* Modular Styles 
   - Almost always either class selectors or relationship selectors (.information, #header ul, etc.)
@@ -60,3 +52,9 @@ h1 {
   - The states, particularly media queries, often take the order of Base, Layout, and Modular styles within them.
   - For JavaScript, the selectors will primarily if not exclusively consist of class selectors (.active, .hidden, .featured)
 */
+
+@media screen and (min-width: 300px) {
+  #home {
+    text-align: center;
+  }
+}
