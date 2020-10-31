@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
-@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
+/* @import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -26,8 +26,15 @@ html {
   font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
   line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
-  /*padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
+  padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
   color: #fff;
+  margin-top: 20%;
+  margin-bottom: auto;
+}
+
+body {
+  display: grid;
+  
 }
 
 h1 {
@@ -54,7 +61,7 @@ h1 {
 }
 
 #home-nav {
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
