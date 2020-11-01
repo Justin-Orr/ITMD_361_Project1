@@ -69,13 +69,15 @@ body {
 #header {
   grid-row: 4 / 5;
   grid-column: 1 / span 3;
+  position: relative;
+  max-height: 600px;
+  overflow: hidden;
+  /*background-image: url(../img/coffee_on_table_edit.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;*/
 }
-
-/* #header {
-  padding-bottom: 25px;
-  max-width: 100%;
-  height: 100px; /* height of 4 lines of grid 
-} */
 
 #home-nav {
   padding-bottom: 50px;
@@ -90,16 +92,9 @@ body {
 #footer {
   grid-row: 8;
   grid-column: 2 / 3;
-}
-
-/*#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
-  height: 2.5rem;
   font-size: 14px;
-}*/
+}
 
 /* Modular Styles
   - Almost always either class selectors or relationship selectors (.information, #header ul, etc.)
@@ -125,12 +120,15 @@ body {
   color: #333;
 }
 
+#navbar ul li {
+  /*text-align: center;*/
+}
+
 #navbar ul li a {
   text-decoration: none;
-  display: block;
+  display: inline-flex;
   color: #333;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 #navbar ul li a:active {
@@ -156,6 +154,13 @@ body {
   #home {
     text-align: center;
   }
+
+  #navbar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 545px) {
@@ -164,7 +169,11 @@ body {
   }
 }
 
-@media screen and (min-width: 675px) {
+@media screen and (min-width: 700px) {
+  #navbar {
+    margin: 0 auto;
+  }
+
   #navbar ul li {
     display: inline-block;
   }
