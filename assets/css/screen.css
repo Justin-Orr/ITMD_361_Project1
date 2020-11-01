@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
-/* @import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
+@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -26,7 +26,7 @@ html {
   font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
   line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
-  padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
+  /*padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
   color: #333;
 }
 
@@ -34,6 +34,7 @@ h1 {
   font-weight: 600;
   font-size: 43.945px; /* 2.441em; /* 43.945px/18px = 2.441em */
   line-height: 50px; /* 31.25px/43.945px = 0.711em*/
+  color: #333;
 }
 
 /* Layout Styles
@@ -52,23 +53,47 @@ h1 {
   color: #fff;
 }
 
-#header {
-  padding-bottom: 25px;
+body {
+  display: grid;
+  /* These values are incements of the base lineheight for the text. The structure is top padding, navigation, space, header, space, content, space, footer, bottom padding*/
+  grid-template-rows: 12.5px 150px 12.5px 150px 1fr 12.5px 25px 12.5px; 
 }
+
+#navbar {
+  grid-row: 2 / 3;
+}
+
+#header {
+  grid-row: 4 / 5;
+}
+
+/* #header {
+  padding-bottom: 25px;
+  max-width: 100%;
+  height: 100px; /* height of 4 lines of grid 
+} */
 
 #home-nav {
   padding-bottom: 50px;
   text-align: center;
 }
 
+#content {
+  grid-row: 5 / 6;
+}
+
 #footer {
+  grid-row: 7;
+}
+
+/*#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   height: 2.5rem;
   font-size: 14px;
-}
+}*/
 
 /* Modular Styles
   - Almost always either class selectors or relationship selectors (.information, #header ul, etc.)
@@ -94,6 +119,23 @@ h1 {
   color: #333;
 }
 
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navbar ul li a:active {
+  background: #333;
+  color: #fff;
+}
+
+#content img {
+  width: 100%;
+}
+
 /* State Styles
   - Two basic states: media queries, or JavaScript-based styles
   - The states, particularly media queries, often take the order of Base, Layout, and Modular styles within them.
@@ -109,5 +151,15 @@ h1 {
 @media screen and (min-width: 545px) {
   #home-nav li {
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  #navbar ul li {
+    display: inline-block;
+  }
+
+  body {
+    grid-template-rows: 12.5px 25px 12.5px 100px 1fr 12.5px 25px 12.5px;
   }
 }
