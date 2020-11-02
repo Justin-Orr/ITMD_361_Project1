@@ -26,7 +26,6 @@ html {
   font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   font-size: 18px;/* 1.125em; /* Convert the wanted default px height of 18 by the standard default of 16px to get our em value i.e. 18px/16px = 1.125em */
   line-height: 25px;/* 1.389em; /* We have a new context so convert this based on the font-size default we wanted of 18px i.e. 25px/18px = 1.389em */
-  /*padding: 25px 12.5px 25px 12.5px;/* 1.389em 0.694em 1.389em 0.694em; /* TRBL 25px/18px, 12.5px/18px, 25px/18px, 12.5px/18px */
   color: #333;
 }
 
@@ -43,7 +42,7 @@ h1 {
   - Initially mobile-first styles
 */
 
-#home {
+/*#home {
   margin-top: 20%;
   margin-bottom: auto;
   background-image: url(../img/coffee_on_table_edit.jpg);
@@ -51,12 +50,12 @@ h1 {
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
-}
+}*/
 
 body {
   display: grid;
   /* These values are incements of the base lineheight for the text. The structure is top padding, navigation, space, header, space, content, space, footer, bottom padding*/
-  grid-template-rows: 12.5px 150px 12.5px 150px 25px 1fr 12.5px 25px 12.5px;
+  grid-template-rows: 25px 150px 25px 225px 25px 1fr 25px 25px 25px;
   /* These values are incements of the base lineheight for the text. The structure is top padding, content, padding*/
   grid-template-columns: 25px 1fr 25px;
 }
@@ -69,20 +68,17 @@ body {
 #header {
   grid-row: 4 / 5;
   grid-column: 1 / span 3;
-  position: relative;
-  max-height: 600px;
-  overflow: hidden;
-  /*background-image: url(../img/coffee_on_table_edit.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url("../img/DarkMountains.jpg");
   background-size: cover;
-  color: #fff;*/
+  background-position-y: center;
+  display: flex;
+  align-items: flex-end;
 }
 
-#home-nav {
+/*#home-nav {
   padding-bottom: 50px;
   text-align: center;
-}
+}*/
 
 #content {
   grid-row: 6 / 7;
@@ -101,7 +97,7 @@ body {
   - Almost always aimed at decorative flourishes (borders, backgrounds, special presentation of groups of elements)
 */
 
-#home-nav li {
+/*#home-nav li {
   padding-bottom: 5px;
 }
 
@@ -118,11 +114,7 @@ body {
 #home-nav a:hover {
   background-color: #fff;
   color: #333;
-}
-
-#navbar ul li {
-  /*text-align: center;*/
-}
+}*/
 
 #navbar ul li a {
   text-decoration: none;
@@ -131,17 +123,62 @@ body {
   padding: 0px 10px 0px 10px;
 }
 
+#navbar ul li a:hover {
+  border: 2px solid #333;
+  border-radius: 2px;
+}
+
 #navbar ul li a:active {
   background: #333;
   color: #fff;
 }
 
 #header h1, #header p {
+  display: block;
   padding-left: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  color: #fff;
+}
+
+#contact-page #header {
+  background-image: url("../img/DarkMountains.jpg");
+}
+
+#about-page #header {
+  background-image: url("../img/ice_branch.jpg");
+}
+
+#prog-page #header {
+  background-image: url("../img/pexels-pixabay-247791.jpg");
 }
 
 #content img {
   width: 100%;
+}
+
+#contact-form-container p {
+  padding-bottom: 25px;
+}
+
+.text-area {
+  height: 50px;
+}
+
+#contact-form-container form * {
+  display: block;
+}
+
+#contact-form-container form label * {
+  display: inline-block;
+  width: 100%;
+}
+
+#contact-form-container form input[type="submit"] {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 /* State Styles
@@ -169,6 +206,21 @@ body {
   }
 }
 
+@media screen and (min-width: 600px) {
+  #contact-form-container {
+    display: grid;
+    grid-template-columns: 1fr 25px 1fr;
+  }
+
+  #contact-form-container aside {
+    grid-column: 1;
+  }
+
+  #contact-form-container form {
+    grid-column: 3;
+  }
+}
+
 @media screen and (min-width: 700px) {
   #navbar {
     margin: 0 auto;
@@ -179,6 +231,16 @@ body {
   }
 
   body {
-    grid-template-rows: 12.5px 25px 12.5px 100px 25px 1fr 12.5px 25px 12.5px;
+    grid-template-rows: 25px 25px 25px 225px 25px 1fr 25px 25px 25px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    grid-template-columns: 20% 1fr 20%;
+  }
+
+  #header h1, #header p {
+    padding-left: 20%;
   }
 }

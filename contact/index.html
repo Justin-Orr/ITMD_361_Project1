@@ -15,38 +15,49 @@
         <li><a href="../programming/index.html">Programming</a></li>
         <li><a href="https://www.flickr.com/photos/190869819@N06/">Photography</a></li>
         <li><a href="../about/index.html">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Contact</a></li>
       </ul>
     </nav>
 
     <header id="header">
-      <img src="../assets/img/coffee_on_table.jpg">
-      <h1>Reach out</h1>
+      <h1>Reach out to me</h1>
     </header>
 
     <main id="content">
-      <p>
-        Please reach out and leave a message. I would love to get in touch with you and talk more about any projects or positions you have available.
-      </p>
-      <p>
-        Email: jorr1@hawk.iit.edu
-      </p>
+      <section id="contact-form-container">
+        <aside>
+          <p>
+            Please reach out and leave a message. I would love to get in touch with you and talk more about any projects or positions you have available.
+          </p>
+          <p>
+            Email: jorr1@hawk.iit.edu
+          </p>
+        </aside>
 
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfGK16c6fegjpk1qHV1s5afcwj1o3N5QlcjJc4D1PpkUsCQDA/formResponse" method="POST">
-        <label for="contact-name">Name:</label>
-        <input type="text" id="contact-name" name="entry.178726683" placeholder="Name" required />
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfGK16c6fegjpk1qHV1s5afcwj1o3N5QlcjJc4D1PpkUsCQDA/formResponse" method="POST">
+          <label>
+            Name:
+            <input type="text" name="entry.178726683" placeholder="Name" required />
+          </label>
 
-        <label for="contact-email">Email:</label>
-        <input type="email" id="contact-email" name="entry.457547660" placeholder="Email" required />
+          <label>
+            Email:
+            <input type="email" name="entry.457547660" placeholder="Email" required />
+          </label>
 
-        <label for="contact-phone">Phone Number:</label>
-        <input type="tel" id="contact-phone" name="entry.1464204802" placeholder="Phone" />
+          <label>
+            Phone Number:
+            <input type="tel" name="entry.1464204802" placeholder="Phone" />
+          </label>
 
-        <label for="contact-message">Message:</label>
-        <input type="text" id="contact-message" name="entry.1333135333" placeholder="Message" required />
+          <label>
+            Message:
+            <input type="text" class="text-area" name="entry.1333135333" placeholder="Message" required />
+          </label>
 
-        <input type="submit" value="Submit" />
-      </form>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
 
     <footer id="footer">
