@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -39,8 +39,16 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 28.125px;
-  line-height: 37.50px;
-  padding-bottom: 12.50px;
+  line-height: 50px;
+}
+
+h3 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+details {
+  padding-bottom: 25px;
 }
 
 /* Layout Styles
@@ -62,7 +70,7 @@ h2 {
 body {
   display: grid;
   /* These values are incements of the base lineheight for the text. The structure is top padding, navigation, space, header, space, content, space, footer, bottom padding*/
-  grid-template-rows: 25px 150px 25px 225px 25px 1fr 25px 25px 25px;
+  grid-template-rows: 25px 150px 25px 275px 25px 1fr 25px 25px 25px;
   /* These values are incements of the base lineheight for the text. The structure is top padding, content, padding*/
   grid-template-columns: 25px 1fr 25px;
 }
@@ -74,12 +82,11 @@ body {
 
 #header {
   grid-row: 4 / 5;
-  grid-column: 1 / span 3;
-  background-image: url("../img/DarkMountains.jpg");
+  grid-column: 1 / 4;
   background-size: cover;
   background-position-y: center;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column-reverse;
 }
 
 /*#home-nav {
@@ -141,11 +148,18 @@ body {
 }
 
 #header h1, #header p {
-  display: block;
   padding-left: 25px;
-  padding-bottom: 25px;
-  position: relative;
+  margin-right: auto;
   color: #fff;
+}
+
+#header p {
+  order: 1;
+  padding-bottom: 25px;
+}
+
+#header h1 {
+  order: 2;
 }
 
 #contact-page #header {
@@ -183,7 +197,7 @@ body {
   align-items: center;
 }
 
-#about-page #content ul {
+#content ul {
   padding-bottom: 25px;
   list-style-type: square;
   padding-left: 25px;
@@ -225,6 +239,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  #header h1 {
+    padding-bottom: 25px;
   }
 }
 
@@ -270,7 +288,34 @@ body {
   }
 
   body {
-    grid-template-rows: 25px 25px 25px 225px 25px 1fr 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 400px 25px 1fr 25px 25px 25px;
+  }
+
+  #prog-page-skills {
+    display: grid;
+    grid-template-columns: 50% 25px 50%;
+    grid-template-rows: 50% 25px 50%;
+    padding-bottom: 25px;
+  }
+  
+  #prog-page-l1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  #prog-page-l2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  #prog-page-l3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  #prog-page-l4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
   }
 }
 
