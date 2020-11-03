@@ -212,6 +212,10 @@ body {
   align-items: center;
 }
 
+#about-page figcaption {
+  color: transparent;
+}
+
 #about-page #content p {
   padding-bottom: 1.389em; /* 25px/18px = 1.389em */
 }
