@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-/*@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
+@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -248,7 +248,6 @@ body {
   width: 100%;
 }
 
-
 #contact-form-container form input[type="submit"] {
   margin-top: 1.389em; /* 25px/18px = 1.389em */
   margin-left: auto;
@@ -258,7 +257,7 @@ body {
   color: #333;
   background-color: #fff;
   border-color: #333;
-  border-radius: 5px;
+  border-radius: 0.278em; /* 5px/18px = 0.278em */
   cursor: pointer;
 }
 
@@ -268,6 +267,25 @@ body {
 
 #resume-page #header {
   background-image: url("../img/pexels-joyston-judah-933054.jpg");
+}
+
+#resume-page button {
+  margin-top: 25px; /* 25px/16px = 1.563em */
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: #333;
+}
+
+#resume-page button a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+#resume-page button a:visited {
+  color: #333;
 }
 
 /* State Styles
