@@ -258,6 +258,10 @@ body {
   background-image: url("../img/pexels-pixabay-247791.jpg");
 }
 
+#resume-page #header {
+  background-image: url("../img/pexels-joyston-judah-933054.jpg");
+}
+
 /* State Styles
   - Two basic states: media queries, or JavaScript-based styles
   - The states, particularly media queries, often take the order of Base, Layout, and Modular styles within them.
