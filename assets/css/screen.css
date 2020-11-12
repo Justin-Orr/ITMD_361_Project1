@@ -116,6 +116,25 @@ body {
   border: 0.056em solid #fff; /* 1px/18px = 0.056em */
 }
 
+#resume-page #header {
+  background-image: url("../img/pexels-joyston-judah-933054.jpg");
+}
+
+#resume-page button {
+  margin-top: 1.875em; /* 25px/13.33px = 1.875em */
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 0.375em; /* 5px/13.33px = 0.375em */
+  border-color: #333;
+}
+
+#resume-page button a {
+  font-size: 1.2em; /* 16px/13.33px = 1.2em */
+  text-decoration: none;
+  color: #333;
+}
+
 #navbar ul li a {
   text-decoration: none;
   display: inline-flex;
@@ -126,6 +145,10 @@ body {
 
 #home-nav a:hover {
   background-color: #fff;
+  color: #333;
+}
+
+#resume-page button a:visited {
   color: #333;
 }
 
@@ -263,29 +286,6 @@ body {
 
 #prog-page #header {
   background-image: url("../img/pexels-pixabay-247791.jpg");
-}
-
-#resume-page #header {
-  background-image: url("../img/pexels-joyston-judah-933054.jpg");
-}
-
-#resume-page button {
-  margin-top: 1.875em; /* 25px/13.33px = 1.875em */
-  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
-  color: #fff;
-  background-color: #fff;
-  border-radius: 0.375em; /* 5px/13.33px = 0.375em */
-  border-color: #333;
-}
-
-#resume-page button a {
-  font-size: 1.200em; /* 16px/13.33px = 1.200em */
-  text-decoration: none;
-  color: #333;
-}
-
-#resume-page button a:visited {
-  color: #333;
 }
 
 /* State Styles
