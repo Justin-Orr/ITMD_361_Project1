@@ -240,6 +240,7 @@ body {
 
 #contact-form-container form * {
   display: block;
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
 }
 
 #contact-form-container form label * {
@@ -252,10 +253,39 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  font-size: 0.889em; /* 16px/18px = 1.389em */
+  color: #333;
+  background-color: #fff;
+  border-color: #333;
+  border-radius: 0.278em; /* 5px/18px = 0.278em */
+  cursor: pointer;
 }
 
 #prog-page #header {
   background-image: url("../img/pexels-pixabay-247791.jpg");
+}
+
+#resume-page #header {
+  background-image: url("../img/pexels-joyston-judah-933054.jpg");
+}
+
+#resume-page button {
+  margin-top: 25px; /* 25px/16px = 1.563em */
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 5px;
+  border-color: #333;
+}
+
+#resume-page button a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+#resume-page button a:visited {
+  color: #333;
 }
 
 /* State Styles
