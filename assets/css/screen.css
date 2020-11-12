@@ -240,6 +240,7 @@ body {
 
 #contact-form-container form * {
   display: block;
+  font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
 }
 
 #contact-form-container form label * {
@@ -247,11 +248,18 @@ body {
   width: 100%;
 }
 
+
 #contact-form-container form input[type="submit"] {
   margin-top: 1.389em; /* 25px/18px = 1.389em */
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  font-size: 0.889em; /* 16px/18px = 1.389em */
+  color: #333;
+  background-color: #fff;
+  border-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #prog-page #header {
