@@ -147,6 +147,7 @@ body#home-body section#home-body-content-container {
   font-family: Montserrat, Arial, Courier, "Times New Roman", Times, sans-serif;
   background-color: #fff;
   border: 0.167em solid #333; /* 3px/18px = 0.167em */
+  border-width: thin;
   border-radius: 0.278em; /* 5px/18px = 0.278em */
   font-size: 0.889em; /* 16px/18px = 0.889em */
   text-decoration: none;
@@ -289,10 +290,16 @@ body#home-body section#home-body-content-container {
 #contact-form-container form label * {
   display: inline-block;
   width: 100%;
+  margin-bottom: 25px;
+}
+
+#contact-form-container form input {
+  background-color: transparent;
+  border-color: #333;
+  border-width: thin;
 }
 
 #contact-form-container form input[type="submit"] {
-  margin-top: 1.389em; /* 25px/18px = 1.389em */
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
