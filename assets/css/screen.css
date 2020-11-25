@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
+/*@import url("https://basehold.it/25"); /* Use this to get horizontal gridline to see baseline. The value at the end specifies the line-height */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -134,6 +134,21 @@ body#home-body section#home-body-content-container {
   border: 0.056em solid #fff; /* 1px/18px = 0.056em */
 }
 
+#footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+#footer-links li {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#footer-links img {
+  height: 25px;
+  width: auto;
+}
+
 #resume-page #header {
   background-image: url("../img/pexels-joyston-judah-933054.jpg");
 }
@@ -238,13 +253,14 @@ body#home-body section#home-body-content-container {
   right: 0;
   left: 0;
   text-align: center;
+  font-size: 0.778em; /* 14px/18px = 0.778em */
 }
 
 #about-page #header {
   background-image: url("../img/ice_branch.jpg");
 }
 
-#about-page img {
+#about-page-portrait {
   max-height: 22.222em; /* 400px/18px = 22.222em */
   height: 100%;
   width: auto;
@@ -371,7 +387,7 @@ body#home-body section#home-body-content-container {
 }
 
 @media screen and (min-width: 33.375em) { /* 534px/16px = 33.375em*/
-  #about-page img {
+  #about-page-portrait {
     margin-left: 0;
     margin-right: 1.389em; /* 25px/18px = 1.389em */
     margin-bottom: 1.389em; /* 25px/18px = 1.389em */
